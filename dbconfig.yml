@@ -2,3 +2,8 @@ development:
   dialect: postgres
   datasource: host=localhost port=5432 user=postgres password=postgres12345 dbname=go_quiz_db sslmode=disable
   dir: migrations
+
+production:
+  dialect: postgres
+  datasource: postgresql://postgres:GFDzLLbKVMlygrjfUTPYIglqiCOSQlZo@trolley.proxy.rlwy.net:18131/railway
+  dir: migrations
