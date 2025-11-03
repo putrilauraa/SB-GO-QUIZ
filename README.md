@@ -24,8 +24,8 @@ DATABASE_URL: postgresql://postgres:GFDzLLbKVMlygrjfUTPYIglqiCOSQlZo@trolley.pro
 Authentication (Basic Auth)
 Method: Middleware Basic Auth 
 Testing Credential:
-Username: admin
-Password: password123
+Username: postgres
+Password: postgres12345
 Include header Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM= on every request to /api/*.
 
 API Endpoints List
