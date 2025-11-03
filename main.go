@@ -14,7 +14,10 @@ func initDB() *sql.DB {
 	connStr := os.Getenv("DATABASE_URL") 
     if connStr == "" {
         connStr = "host=localhost port=5432 user=postgres password=postgres12345 dbname=go_quiz_db sslmode=disable"
-    }
+    } else {
+        log.Println("Using production database credentials from DATABASE_URL.")
+	}
+	
 	db, err := sql.Open("postgres", connStr)
     if err != nil {
         log.Fatal("Error connecting to the database: ", err)
