@@ -1,0 +1,4 @@
+development: 
+  dialect: postgres
+  datasource: host=localhost port=5432 user=postgres password=postgres12345 dbname=go_quiz_db sslmode=disable
+  dir: migrations
